@@ -78,5 +78,6 @@ src  README.md  build.gradle
 > touch hello.txt
 > cat hello.txt
 ```
+---
 ⭐ Support
 If you find the project helpful, consider giving the repository a star on GitHub!
