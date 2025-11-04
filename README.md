@@ -49,8 +49,8 @@ src/
 
 ### 1. Clone the repository
 ```sh
-git clone https://github.com/<your-username>/mini-cli.git
-cd mini-cli
+git clone https://github.com/zekooo69/Command-Line-Interpreter-CLI-.git
+cd Command-Line-Interpreter-CLI-.git
 
 2. Compile
 
