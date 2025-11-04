@@ -31,4 +31,49 @@ A minimal, cross-platform command-line interface written in Java.
 ## 🧱 Architecture
 
 The project is organized into modular components:
+src/
+├── Terminal.java # main loop, command dispatcher
+├── Parser.java # tokenizing & argument parsing
+├── Commands/ # commands implementation
+└── Utils/ # helpers (path resolver, zip utils, IO utils)
 
+### ✅ Clear separation of concerns
+- **Parser** handles tokenizing commands (supports quoting `"text with spaces"`).
+- **Executor** maps commands → functions.
+- **FileSystemUtils** ensures safe path handling for all OS environments.
+- **ZipUtils** wraps Java zip APIs with safe and simple usage.
+
+---
+
+## 📦 Installation
+
+### 1. Clone the repository
+```sh
+git clone https://github.com/<your-username>/mini-cli.git
+cd mini-cli
+
+2. Compile
+
+Using Gradle:
+
+./gradlew build
+
+
+Or using javac:
+
+javac -d out src/**/*.java
+
+3. Run
+java -cp out Terminal
+
+🖥️ Usage Example
+> pwd
+C:/Users/Zaki
+
+> ls
+src  README.md  build.gradle
+
+> mkdir test
+> cd test
+> touch hello.txt
+> cat hello.txt
