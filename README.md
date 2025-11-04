@@ -48,7 +48,7 @@ src/
 ## 📦 Installation
 
 ### 1. Clone the repository
-
+```sh
 git clone https://github.com/<your-username>/mini-cli.git
 cd mini-cli
 
@@ -77,6 +77,6 @@ src  README.md  build.gradle
 > cd test
 > touch hello.txt
 > cat hello.txt
-
+```
 ⭐ Support
 If you find the project helpful, consider giving the repository a star on GitHub!
